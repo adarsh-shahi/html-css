@@ -12,7 +12,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 800px;
+  width: 1200px;
   
 }
 
@@ -86,13 +86,11 @@ li:last-child{
   font-size: 20px;
 }
 
-.text {
-
-}
-
 .related-author {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: normal;
+  margin: 0;
+  font-style: italic;
 }
 
 .related-list {
@@ -101,9 +99,7 @@ li:last-child{
 
 .main-header {
   background-color: #e8e8e8;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 20px 40px;
   margin-bottom: 50px;
 }
 
@@ -117,7 +113,7 @@ li:last-child{
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0;
-  width: 500px;
+  width: 600px;
 }
 
 .post-image {
@@ -163,13 +159,8 @@ a:active {
 }
 
 
-ul, ol {
-  margin-left: 50px;
-  margin-bottom: 20px;
-}
-
 nav a:link {
-  margin: 20px;
+  margin-right: 20px;
 }
 
 h1::first-letter{
@@ -193,4 +184,62 @@ h2::after{  /* creating child element in h2 */
   position: absolute;
   top: -10px;
   right: -30px;
+}
+
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author {
+  margin: 0;
+  margin-left: 50px;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.related-link:link {
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.related-post{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.row{
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+ol:first-of-type{
+  margin-left: 30px;
+}
+
+.related-list {
+  padding:0 30px;
+}
+
+article {
+  /* flex: 0 0 825px; */
+  flex: 1;
+  margin-bottom: 0;
+}
+
+aside {
+  flex:0 0 300px;
+  padding: 10px 40px;
 }

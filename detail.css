@@ -94,7 +94,7 @@ h3::before{
   position: absolute;
   top: -15px;
   left: -20px;
-  letter-spacing: 2px;
+  letter-spacing: 2px; 
 }
 
 .color-options {
