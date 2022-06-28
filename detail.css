@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.4;
@@ -5,22 +10,29 @@ body {
 
 article {
   border: 5px solid black;
+  width: 825px;
+  margin: 60px auto;
+  position: relative;
 }
 
 
 button {
   background-color: black;
   color: white;
-  font-weight: bold;
   text-transform: uppercase;
   border: none;
   font-size: 25px;
+  width: 100%;
+  border-top: 5px solid black;
+  padding: 5px 0;
 }
 
 h3 {
   text-align: center;
   background-color: #e8e8e8;
   text-transform: uppercase;
+  padding: 15px;
+
 }
 
 article p:nth-child(4) {
@@ -28,18 +40,29 @@ article p:nth-child(4) {
     color: #444;
     font-weight: bold;
     font-size: 14px;
+    margin-bottom: 20px;
+}
+
+article p:nth-child(5){
+  margin-bottom: 10px;
 }
 
 ul {
   list-style: square;
+  margin-left: 50px;
 }
 
 h4 {
   text-transform: uppercase;
+  margin: 20px 0;
 }
 
 a:link, a:visited {
   color: black;
+}
+
+a {
+  margin-bottom: 20px;
 }
 
 a:hover {
@@ -50,4 +73,68 @@ a:hover {
 button:hover {
   background-color: white;
   color: black;
+ 
 }
+
+li {
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin: 0;
+}
+
+
+h3::before{
+  content: "SALE";
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  font-size: 10px;
+  position: absolute;
+  top: -15px;
+  left: -20px;
+  letter-spacing: 2px;
+}
+
+.color-options {
+  margin: 30px 0;
+}
+
+.color-options > div {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+
+.color-options div:first-child{
+  background-color: #000;
+}
+
+.color-options div:nth-child(2){
+  background-color: blue;
+}
+
+.color-options div:nth-child(3){
+  background-color: red;
+}
+
+.color-options div:nth-child(4){
+  background-color: yellow;
+}
+
+.color-options div:nth-child(5){
+  background-color: green;
+}
+
+.color-options div:nth-child(6){
+  background-color: brown;
+}
+
+.color-options div:last-child {
+  margin: 0;
+}
+
+

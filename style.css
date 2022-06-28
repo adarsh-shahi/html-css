@@ -1,12 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: sans-serif;
   color: #444;
   border-top: 10px solid #1098ad;
+  position: relative;
 }
 
+.container {
+  margin: 0 auto;
+  width: 800px;
+  
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 22px;
+  position: absolute; 
+  bottom: 50px; 
+  right: 50px;
+}
+ 
 h1, h2, h3 {
   color: #1098ad;
+}
+
+article {
+  margin-bottom: 50px;
 }
 
 
@@ -18,21 +42,31 @@ h1 {
 
 h2 {
   font-size: 35px;
+  margin-bottom: 30px;
+  position: relative;
 }
   
 h3 {
   font-size: 28px;
   text-transform: uppercase;  
   text-align: center;
+  margin-bottom: 20px;
 }
 
 p {
   font-size: 20px; 
   line-height: 1.5;  
+  margin-bottom: 15px;
 }
 
 li {
   font-size: 18px;
+  margin-bottom: 5px;
+
+}
+
+li:last-child{
+  margin-bottom: 0;
 }
 
 /* footer p {
@@ -67,12 +101,28 @@ li {
 
 .main-header {
   background-color: #e8e8e8;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+
 }
 
 .related-aside {
   background-color: #e8e8e8;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
 }
 
 /* .make-bold {
@@ -92,8 +142,8 @@ li:nth-child(even){
   color:#1098ad;
 } */
 
-a:link {    /* works for unvisited lnks */
-  color: #1098ad;
+a:link {    
+  color: #1098ad;/* works for unvisited lnks */
   text-decoration: none;
 }
 
@@ -110,4 +160,37 @@ a:hover {
 a:active {
   background-color: black;
   font-style: italic; 
+}
+
+
+ul, ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+nav a:link {
+  margin: 20px;
+}
+
+h1::first-letter{
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* h3 + p::first-line{
+  color: red;
+} */
+
+
+h2::after{  /* creating child element in h2 */
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  color: #444;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -30px;
 }
