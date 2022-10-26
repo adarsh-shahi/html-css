@@ -159,7 +159,7 @@ strong {
 .link:hover,
 .link:visited{
 	color: #cf711f;
-	border-bottom: none
+	border-bottom: 1px solid transparent
 }
 
 .center-text{
