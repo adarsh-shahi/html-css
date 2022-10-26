@@ -31,7 +31,7 @@ body {
 */
 
 /* ************************ */
-/** GENERAL REUSABLE COMPONENTS **/
+/** 1. GENERAL REUSABLE COMPONENTS **/
 /* ************************ */
 
 .container {
@@ -138,12 +138,36 @@ body {
 	margin-right: 1.6rem !important;
 }
 
+.margin-bottom-md{
+	margin-bottom: 4.8rem !important;
+}
+
 strong {
 	font-weight: 500;
 }
 
+.link:link,
+.link:visited{
+	color: #e67e22;
+	text-decoration: none;
+	border-bottom: 1px solid currentColor;
+	display: inline-block;
+	padding-bottom: 2px;
+	transition: all 0.3s;
+}
+
+.link:hover,
+.link:visited{
+	color: #cf711f;
+	border-bottom: none
+}
+
+.center-text{
+	text-align: center;
+}
+
 /* ************************ */
-/** HEADER **/
+/** 2. HEADER **/
 /* ************************ */
 
 .logo {
@@ -160,7 +184,7 @@ strong {
 }
 
 /* ************************ */
-/** NAVIGATION **/
+/** 3. NAVIGATION **/
 /* ************************ */
 
 .main-nav-list {
@@ -199,7 +223,7 @@ strong {
 }
 
 /* ************************ */
-/** HERO SECTION **/
+/** 4. HERO SECTION **/
 /* ************************ */
 
 .section-hero {
@@ -261,7 +285,7 @@ strong {
 }
 
 /* ************************ */
-/** FEATURED IN SECTION **/
+/** 5. FEATURED IN SECTION **/
 /* ************************ */
 
 .section-featured {
@@ -291,7 +315,7 @@ strong {
 }
 
 /* ************************ */
-/** HOW IT WORKS **/
+/** 6. HOW IT WORKS **/
 /* ************************ */
 
 .section-how {
@@ -347,7 +371,7 @@ strong {
 }
 
 /* ************************ */
-/**	MEALS SECTION **/
+/**	7. MEALS SECTION **/
 /* ************************ */
 
 .section-meals {
@@ -358,6 +382,12 @@ strong {
 	box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
 	border-radius: 1.4rem;
 	overflow: hidden;
+	transition: all 0.4s;
+}
+
+.meal:hover{
+	transform: translateY(-2.5%);
+	box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
 }
 
 .meal-content {
@@ -421,4 +451,31 @@ strong {
 .meal-icon {
 	font-size: 2.4rem;
 	color: #e67e22;
+}
+
+.list{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+}
+
+.list-icon{
+	font-size: 3rem;
+	color: #e67e22;
+}
+
+.list-item{
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+}
+
+.list-item span{
+	font-size: 1.8rem;
+}
+
+.all-recipes{
+	text-align: center;
+	font-size: 1.8rem;
 }
