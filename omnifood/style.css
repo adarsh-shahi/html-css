@@ -44,6 +44,15 @@ body {
 	display: grid;
 	row-gap: 9.6rem;
 	column-gap: 6.4rem;
+	/* margin-bottom: 9.6rem; */
+}
+
+/* .grid:last-child{
+	margin-bottom: 0;
+} */
+
+.grid:not(:last-child){
+	margin-bottom: 9.6rem;
 }
 
 .grid--center-v {
@@ -621,4 +630,31 @@ strong {
 }
 .pricing-plan-1 .list-item:last-child{
 	text-decoration:line-through;
+}
+
+.plan-details{
+	font-size: 1.6rem;
+	line-height: 1.6;
+	text-align: center;
+}
+
+.feature-icon{
+	color: #e67e22;
+	font-size: 3.2rem;
+	margin-bottom: 3.2rem;
+	background-color: #fdf2e9;
+	padding: 1.6rem;
+	border-radius: 50%;
+}
+
+.feature-title{
+	font-size: 2.4rem;
+	color: #333;
+	font-weight: 700;
+	margin-bottom: 1.6rem;
+}
+
+.feature-text{
+	font-size: 1.8rem;
+	line-height: 1.8rem;
 }
