@@ -548,6 +548,41 @@ strong {
 .section-pricing{
 	padding: 9.6rem 0;
 } 
+
+.pricing-plan-1,
+.pricing-plan-2{
+	border-radius: 11px;
+	
+	width: 75%;
+}
+
+.pricing-plan-1{
+	justify-self: end;
+	border: 2px solid #fdf2e9;
+	padding: 4.6rem;
+}
+.pricing-plan-2{
+	justify-self: start;
+	background-color: #fdf2e9;
+	padding: 4.8rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.pricing-plan-2::after{
+	content: "Best value";
+	position: absolute;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	font-weight: 700;
+	background-color: #ffd43b;
+	color: #333;
+	padding: 0.8rem 3.8rem;
+	top: 6%;
+	right: -8%;
+	transform: rotate(45deg);
+}
+
 .header-plan{
 	text-align: center;
 	margin-bottom: 4.8rem;
@@ -583,4 +618,7 @@ strong {
 .plan-signup{
 	text-align: center;
 	margin-top: 4.8rem;
+}
+.pricing-plan-1 .list-item:last-child{
+	text-decoration:line-through;
 }
