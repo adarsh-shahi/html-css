@@ -51,7 +51,7 @@ body {
 	margin-bottom: 0;
 } */
 
-.grid:not(:last-child){
+.grid:not(:last-child) {
 	margin-bottom: 9.6rem;
 }
 
@@ -147,7 +147,7 @@ body {
 	margin-right: 1.6rem !important;
 }
 
-.margin-bottom-md{
+.margin-bottom-md {
 	margin-bottom: 4.8rem !important;
 }
 
@@ -156,7 +156,7 @@ strong {
 }
 
 .link:link,
-.link:visited{
+.link:visited {
 	color: #e67e22;
 	text-decoration: none;
 	border-bottom: 1px solid currentColor;
@@ -166,28 +166,28 @@ strong {
 }
 
 .link:hover,
-.link:visited{
+.link:visited {
 	color: #cf711f;
-	border-bottom: 1px solid transparent
+	border-bottom: 1px solid transparent;
 }
 
-.center-text{
+.center-text {
 	text-align: center;
 }
 
-.list{
+.list {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
 	gap: 1.6rem;
 }
 
-.list-icon{
+.list-icon {
 	font-size: 3rem;
 	color: #e67e22;
 }
 
-.list-item{
+.list-item {
 	display: flex;
 	align-items: center;
 	gap: 1.6rem;
@@ -412,7 +412,7 @@ strong {
 	transition: all 0.4s;
 }
 
-.meal:hover{
+.meal:hover {
 	transform: translateY(-2.5%);
 	box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
 }
@@ -480,97 +480,95 @@ strong {
 	color: #e67e22;
 }
 
-
-
-.list-item span{
+.list-item span {
 	font-size: 1.8rem;
 }
 
-.all-recipes{
+.all-recipes {
 	text-align: center;
 	font-size: 1.8rem;
 }
 
 /* ************************ */
-/**	7. TESTIMONIALS SECTION **/
+/**	8. TESTIMONIALS SECTION **/
 /* ************************ */
 
-.section-testimonials{
+.section-testimonials {
 	background-color: #fdf2e9;
 	display: grid;
 	grid-template-columns: 55fr 45fr;
 	align-items: center;
 }
 
-.testimonials-container{
+.testimonials-container {
 	padding: 9.6rem;
 }
 
-.testimonials{
+.testimonials {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	row-gap: 4.8rem;	
+	row-gap: 4.8rem;
 	column-gap: 8rem;
 }
 
-.testimonial-img{
+.testimonial-img {
 	width: 6.4rem;
 	border-radius: 50%;
 	margin-bottom: 1.2rem;
 }
 
-.testimonial-text{
+.testimonial-text {
 	font-size: 1.8rem;
 	line-height: 1.8;
 	margin-bottom: 1.6rem;
 }
 
-.testimonial-name{
+.testimonial-name {
 	font-size: 1.6rem;
 	color: #6f6f6f;
 }
-.gallery{
+.gallery {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 1.8rem;
 	padding: 1.8rem;
 }
 
-.gallery-item img{
+.gallery-item img {
 	display: block;
 	width: 100%;
 	transition: all 0.4s;
 }
 
-.gallery-item img:hover{
+.gallery-item img:hover {
 	transform: scale(1.1);
 }
 
-.gallery-item{
+.gallery-item {
 	overflow: hidden;
 }
 
 /* ************************ */
-/**	7. PRICING SECTION **/
+/**	9. PRICING SECTION **/
 /* ************************ */
 
-.section-pricing{
+.section-pricing {
 	padding: 9.6rem 0;
-} 
+}
 
 .pricing-plan-1,
-.pricing-plan-2{
+.pricing-plan-2 {
 	border-radius: 11px;
-	
+
 	width: 75%;
 }
 
-.pricing-plan-1{
+.pricing-plan-1 {
 	justify-self: end;
 	border: 2px solid #fdf2e9;
 	padding: 4.6rem;
 }
-.pricing-plan-2{
+.pricing-plan-2 {
 	justify-self: start;
 	background-color: #fdf2e9;
 	padding: 4.8rem;
@@ -578,7 +576,7 @@ strong {
 	overflow: hidden;
 }
 
-.pricing-plan-2::after{
+.pricing-plan-2::after {
 	content: "Best value";
 	position: absolute;
 	text-transform: uppercase;
@@ -592,11 +590,11 @@ strong {
 	transform: rotate(45deg);
 }
 
-.header-plan{
+.header-plan {
 	text-align: center;
 	margin-bottom: 4.8rem;
 }
-.plan-name{
+.plan-name {
 	color: #cf711f;
 	font-weight: 600;
 	font-size: 2rem;
@@ -605,40 +603,40 @@ strong {
 	margin-bottom: 3.2rem;
 }
 
-.plan-price{
+.plan-price {
 	font-size: 6.2rem;
 	font-weight: 600;
 	color: #333;
 	margin-bottom: 1.6rem;
 }
 
-.plan-price span{
+.plan-price span {
 	font-size: 3rem;
 	font-weight: 500;
-	margin-right: .8rem;
+	margin-right: 0.8rem;
 }
 
-.plan-text{
+.plan-text {
 	font-size: 1.6rem;
 	line-height: 1.6;
 	color: #6f6f6f;
 }
 
-.plan-signup{
+.plan-signup {
 	text-align: center;
 	margin-top: 4.8rem;
 }
-.pricing-plan-1 .list-item:last-child{
-	text-decoration:line-through;
+.pricing-plan-1 .list-item:last-child {
+	text-decoration: line-through;
 }
 
-.plan-details{
+.plan-details {
 	font-size: 1.6rem;
 	line-height: 1.6;
 	text-align: center;
 }
 
-.feature-icon{
+.feature-icon {
 	color: #e67e22;
 	font-size: 3.2rem;
 	margin-bottom: 3.2rem;
@@ -647,14 +645,48 @@ strong {
 	border-radius: 50%;
 }
 
-.feature-title{
+.feature-title {
 	font-size: 2.4rem;
 	color: #333;
 	font-weight: 700;
 	margin-bottom: 1.6rem;
 }
 
-.feature-text{
+.feature-text {
 	font-size: 1.8rem;
 	line-height: 1.8rem;
+}
+
+/* ************************ */
+/**	10. PRICING SECTION **/
+/* ************************ */
+
+.section-cta {
+	padding: 9.6rem 0;
+}
+
+.cta {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	/* background-color: #e67e22; */
+	box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.15);
+	border-radius: 15px;
+	background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+	height: 50rem;
+	overflow: hidden;
+}
+
+.cta-text-box {
+
+}
+
+.cta-img-box {
+	background-image: linear-gradient(
+			to right bottom,
+			rgba(235, 151, 78, 0.35),
+			rgba(230, 125, 34, 0.35)
+		),
+		url(./img/eating.jpg);
+	background-size: cover;
+	background-position: center;
 }
