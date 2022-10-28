@@ -71,6 +71,10 @@ body {
 	grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+	grid-template-columns: repeat(5, 1fr);
+}
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -759,3 +763,10 @@ strong {
 	box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
 
+/* ************************ */
+/**	11. FOOTER **/
+/* ************************ */
+
+.footer{
+	padding: 9.6rem 0;
+}
