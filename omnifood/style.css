@@ -1038,3 +1038,44 @@ strong {
 		display: none;
 	}
 }
+
+/* ********************************** */
+/** 2. BELOW 704px (smaller Tablets) **/
+/* ********************************** */
+
+@media(max-width: 44rem){
+	.grid--3-cols,
+	.grid--4-cols{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.diets{
+		justify-self: center;
+		grid-column: 1 / -1;
+	}
+
+	.heading-secondary{
+		margin-bottom: 4.8rem;
+	}
+
+	.pricing-plan-1, .pricing-plan-2{
+		width: 100%;
+	}
+
+	.grid--footer{
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+	/* .address-col{
+		grid-column: 2 / -1;
+		justify-content: center;
+	} */
+	.nav-col{
+		grid-row: 1;
+		grid-column: span 2;
+		margin-bottom: 3.2rem;
+	}
+	.address-col, .logo-col{
+		grid-column: span 3;
+	}
+}
