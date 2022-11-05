@@ -990,7 +990,7 @@ strong {
 	.btn-moblie-nav {
 		display: block;
 	}
-	.header{
+	.header {
 		position: relative;
 	}
 
@@ -1025,7 +1025,7 @@ strong {
 		font-size: 3rem;
 	}
 
-	.nav-open .main-nav{
+	.nav-open .main-nav {
 		opacity: 1;
 		pointer-events: auto;
 		visibility: visible;
@@ -1043,26 +1043,27 @@ strong {
 /** 2. BELOW 704px (smaller Tablets) **/
 /* ********************************** */
 
-@media(max-width: 44rem){
+@media (max-width: 44rem) {
 	.grid--3-cols,
-	.grid--4-cols{
+	.grid--4-cols {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	.diets{
+	.diets {
 		justify-self: center;
 		grid-column: 1 / -1;
 	}
 
-	.heading-secondary{
+	.heading-secondary {
 		margin-bottom: 4.8rem;
 	}
 
-	.pricing-plan-1, .pricing-plan-2{
+	.pricing-plan-1,
+	.pricing-plan-2 {
 		width: 100%;
 	}
 
-	.grid--footer{
+	.grid--footer {
 		grid-template-columns: repeat(6, 1fr);
 	}
 
@@ -1070,12 +1071,79 @@ strong {
 		grid-column: 2 / -1;
 		justify-content: center;
 	} */
-	.nav-col{
+	.nav-col {
 		grid-row: 1;
 		grid-column: span 2;
 		margin-bottom: 3.2rem;
 	}
-	.address-col, .logo-col{
+	.address-col,
+	.logo-col {
 		grid-column: span 3;
+	}
+}
+
+/* ********************************** */
+/** 2. BELOW 544px (Phones) **/
+/* ********************************** */
+
+@media (max-width: 34rem) {
+	.grid {
+		row-gap: 4.8rem;
+	}
+
+	.grid--2-cols,
+	.grid--3-cols,
+	.grid--4-cols {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.section-hero {
+		padding: 2.4rem 0 6.4rem 0;
+	}
+	.hero {
+		padding: 0 3.2rem;
+	}
+
+	.btn,
+	.btn:link,
+	.btn:visited {
+		padding: 2.4rem 1.6rem;
+	}
+
+	.hero-img{
+		width: 80%;
+	}
+
+	.logos img{
+		height: 1.2rem;
+	}
+
+	.step-img-box:nth-child(2){
+		grid-row: 1;
+	}
+	.step-img-box:nth-child(6){
+		grid-row: 5;
+	}
+	
+	.step-img-box{
+		transform: translateY(15%);
+	}
+
+	.testimonials{
+		grid-template-columns: 1fr;
+	}
+
+	.gallery{
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1.2rem;
+	}
+
+	.cta{
+		grid-template-columns: 1fr;
+	}
+
+	.cta-img-box{
+		grid-row: 1;
+		height: 36rem;
 	}
 }
